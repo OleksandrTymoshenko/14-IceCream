@@ -1,0 +1,12 @@
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    $semi-pink-background-color,
+    $semi-pink-background-color 40%,
+    #ffffff 40%
+  );
+}
+
+.gallery__image {
+  width: 100%;
+}
