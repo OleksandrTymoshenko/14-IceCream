@@ -1,0 +1,125 @@
+.advantages {
+  background-color: $semi-pink-background-color;
+  padding-top: 40px;
+  padding-bottom: 97px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 140px;
+  }
+}
+
+.advantages__description {
+  padding-top: 66px;
+
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: $black-text-color;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 86px;
+    font-size: 14px;
+    line-height: 1.74;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+.advantages__number {
+  display: block;
+  margin-bottom: 13px;
+
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $digits-text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.advantages__item {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url('../images/advantages-icon1-1x.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/advantages-icon1-2x.png');
+    }
+  }
+
+  &:nth-child(2)::before {
+    background-image: url('../images/advantages-icon2-1x.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/advantages-icon2-2x.png');
+    }
+  }
+
+  &:nth-child(3)::before {
+    background-image: url('../images/advantages-icon3-1x.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/advantages-icon3-2x.png');
+    }
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: ($tablet - 1px)) {
+      margin-bottom: 38px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% / 3 - 80px);
+    margin-top: 80px;
+    margin-left: 80px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+.advantages__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-top: -80px;
+    margin-left: -80px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
