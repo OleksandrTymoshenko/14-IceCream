@@ -151,7 +151,7 @@
   // content: url(../images/products-icecream.png);
   position: absolute;
   background-size: cover;
-  background-image: url('/images/dots.png');
+  background-image: url('/images/dots-x1.png');
   // margin-bottom: 30px;
   margin-top: 50px;
   @media screen and (min-width: $desktop) {
@@ -168,15 +168,25 @@
   // content: url(../images/products-icecream.png);
   position: absolute;
   background-size: cover;
-  background-image: url('/images/products-icecream.png');
+  background-image: url('/images/products-icecream-x1.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('/images/products-icecream-x2.png');
+  }
+
   @media (min-width: 768px) and (max-width: 1049px) {
-    background-image: url('/images/products-icecream-tabl.png');
+    background-image: url('/images/products-icecream-tabl-x1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/products-icecream-tabl-x2.png');
+    }
     width: 220px;
     height: 226px;
   }
   @media screen and (min-width: 1050px) {
     // flex-basis: calc(100% / 3 - 30px);
-    background-image: url('/images/products-icecream-desctop.png');
+    background-image: url('/images/products-icecream-desctop-x1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/products-icecream-desctop-x2.png');
+    }
     width: 335px;
     height: 335px;
     top: -40%;
@@ -191,15 +201,24 @@
   // content: url(../images/products-icecream.png);
   position: absolute;
   background-size: cover;
-  background-image: url('/images/products-icecoffe.png');
+  background-image: url('/images/products-icecoffe-x1.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('/images/products-icecoffe-x2.png');
+  }
   @media (min-width: 768px) and (max-width: 1049px) {
-    background-image: url('/images/products-icecoffe-tabl.png');
+    background-image: url('/images/products-icecoffe-tabl-x1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/products-icecoffe-tabl-x2.png');
+    }
     width: 220px;
     height: 226px;
   }
   @media screen and (min-width: 1050px) {
     // flex-basis: calc(100% / 3 - 30px);
-    background-image: url('/images/products-icecoffe-desctop.png');
+    background-image: url('/images/products-icecoffe-desctop-x1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/products-icecoffe-desctop-x2.png');
+    }
     width: 335px;
     height: 335px;
     top: -40%;
@@ -214,15 +233,24 @@
   // content: url(../images/products-icecream.png);
   position: absolute;
   background-size: cover;
-  background-image: url('/images/products-milcshake.png');
+  background-image: url('/images/products-milcshake-x1.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('/images/products-milcshake-x2.png');
+  }
   @media (min-width: 768px) and (max-width: 1049px) {
-    background-image: url('/images/products-milcshake-tabl.png');
+    background-image: url('/images/products-milcshake-tabl-x1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/products-milcshake-tabl-x2.png');
+    }
     width: 220px;
     height: 226px;
   }
   @media screen and (min-width: 1050px) {
     // flex-basis: calc(100% / 3 - 30px);
-    background-image: url('/images/products-milcshake-desctop.png');
+    background-image: url('/images/products-milcshake-desctop-x1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/products-milcshake-desctop-x2.png');
+    }
     width: 335px;
     height: 335px;
     top: -40%;
