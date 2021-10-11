@@ -1,11 +1,35 @@
-.header .container {
-  background-color: $mobile-menu-background;
+.container-header {
+  position: relative;
+  @media screen and (min-width: 1080px) {
+   width: 1169px;
+  }  
+}
+
+.box-header { 
+  position:absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   padding-top: 6px;
+  padding-left: 20px;
   padding-right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 99;
+  @media screen and (min-width: 768px) {
+    padding-top: 38px;
+    padding-right: 5px;
+    max-width: 768px;
+  }  
+  @media screen and (min-width: 1080px) {
+    padding-top: 38px;
+    padding-right: 5px;
+    max-width: 1095px;
+  }  
+
 }
+
 
 .menu-container { 
   position: fixed;
@@ -14,7 +38,7 @@
   background-color:  $mobile-menu-background;
   padding-top: 60px; 
   text-align: center;
-  width: 100vw;
+  width: 250px;
   height: 100vh;
   z-index: 999;
   transform: translateX(100%);
@@ -23,7 +47,7 @@
     width: 254px;
     transform: translateX(1300px);
   }  
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1080px) {
     display: none;
   }
 }
@@ -50,10 +74,10 @@
   right: 15px;
 }
 
-.header .menu-toggle {
+.container-header .menu-toggle {
   background-color: transparent;
   border: none;
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1080px) {
     display: none;
   }
 }
@@ -62,7 +86,7 @@
   fill: $white-text-color;
 }
 
-.header .button-buy {
+.container-header .button-buy {
   display: none;
   @media screen and (min-width: 768px) {
     width: 160px;
@@ -72,7 +96,7 @@
     display: inline-block;
     margin-left: 30px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1080px) {
     margin-left: 0px;
   }
 }
@@ -155,7 +179,7 @@
 text-decoration: none;
 font-family: DM Sans;
 font-style: normal;
-font-weight: bold;
+font-weight: 700;
 font-size: 16px;
 line-height: calc(21 / 16);
 color:  $white-text-color;
