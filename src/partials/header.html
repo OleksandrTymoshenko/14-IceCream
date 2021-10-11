@@ -1,9 +1,79 @@
 <header class="header">
-    <h1 class="banner__title">HEADER</h1>
-<div class="container">
-    <ul>
-        <li>TEST</li>
-        <li>test2</li>
-        <li>t  e  s  t  3</li>
-    </ul>
-</div>
+    <div class="container">
+      <a href="" class="logo">
+        <picture>
+          <source media="(min-width:1200px)" srcset=""
+            width="199" height="50"/>                 
+          <img src="./images/logo-x1.png" alt="Логотип"/>
+        </picture> 
+      </a>
+      <nav>
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="">Home</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="">About us</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="">How it`s made</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="">Our products</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="">Contact</a>
+          </li>
+        </ul>            
+      </nav>
+      <div class="button-container">
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="header__icon" width="20" height="12">
+          <use href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button type="button" class="button-buy">
+        Buy now
+        <svg class="mob-menu__icon" width="5" height="8">
+          <use href="./images/sprite.svg#icon-btn"></use>
+        </svg>
+      </button>
+      </div>
+      
+      
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-toggle__icon" width="14" height="14">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+          <button type="button" class="button-buy">
+            Buy now
+            <svg class="mob-menu__icon" width="5" height="8">
+              <use href="./images/sprite.svg#icon-btn"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">Home</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">About us</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">How it`s made</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">Our products</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">Contact</a>
+            </li>
+          </ul>            
+        </div>
+    </div>
+  </header>
