@@ -7,6 +7,147 @@
   );
 }
 
+// .gallery__image {
+//   width: 100%;
+// }
+
+.gallery__grid {
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    align-items: start;
+    margin: 0 auto;
+    height: 122px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    height: 331px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 430px;
+  }
+}
+
+.gallery__grid-item {
+  position: relative;
+
+  @media screen and (max-width: $mobile - 1px) {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 38px;
+    height: 38px;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 108px;
+    height: 108px;
+
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 140px;
+    height: 140px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.gallery__grid-item-3 {
+  @media screen and (min-width: $mobile) {
+    width: 76px;
+    height: 76px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 216px;
+    height: 216px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.gallery__column {
+  @media screen and (max-width: $mobile - 1px) {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media screen and (min-width: $mobile) {
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    &:nth-child(1) {
+      margin-top: 15%;
+    }
+
+    &:nth-child(2) {
+      margin-top: 9%;
+    }
+
+    &:nth-child(4) {
+      margin-top: 11%;
+    }
+
+    &:nth-child(5) {
+      margin-top: 6%;
+    }
+
+    &:nth-child(6) {
+      margin-top: 16%;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
 .gallery__image {
-  width: 100%;
+  border-radius: 15%;
+  overflow: hidden;
+
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $mobile) {
+    position: absolute;
+
+    .gallery__grid-item:hover & {
+      transform: scale(3);
+      z-index: 9;
+      pointer-events: none;
+    }
+
+    .gallery__grid-item-3:hover & {
+      transform: scale(1.5);
+      z-index: 9;
+      pointer-events: none;
+    }
+  }
 }
