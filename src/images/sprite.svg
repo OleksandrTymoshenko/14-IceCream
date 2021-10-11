@@ -12,6 +12,7 @@
 <symbol id="icon-read-more" viewBox="0 0 26 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
 </symbol>
+
 <symbol id="icon-menu" viewBox="0 0 46 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
 </symbol>
@@ -22,6 +23,13 @@
 </symbol>
 <symbol id="icon-btn" viewBox="0 0 22 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.322 3.2l14.973 12.8-14.976 12.8"></path>
+
+<symbol id="icon-chevron-right" viewBox="0 0 24 24">
+<path d="M9.707 18.707l6-6c0.391-0.391 0.391-1.024 0-1.414l-6-6c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0z"></path>
+</symbol>
+<symbol id="icon-close1" viewBox="0 0 32 32">
+<path d="M26.687 7.309l-1.971-1.971-7.814 7.814-7.814-7.814-1.971 1.971 7.814 7.814-7.814 7.814 1.971 1.971 7.814-7.814 7.814 7.814 1.971-1.971-7.814-7.814 7.814-7.814z"></path>
+
 </symbol>
 </defs>
 </svg>
