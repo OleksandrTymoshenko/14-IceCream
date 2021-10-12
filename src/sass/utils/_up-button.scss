@@ -1,0 +1,42 @@
+#up-button {
+  display: inline-block;
+  background-color: $hero-background;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 30px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+  transition: background-color 250ms, opacity 500ms, visibility 500ms;
+  opacity: 0.5;
+  visibility: hidden;
+  &:hover {
+    cursor: pointer;
+    background-color: $hero-background;
+    opacity: 1;
+  }
+  &:active {
+    background-color: $title-text-color;
+  }
+  &::after {
+    content: '\f077';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  &.show {
+    visibility: visible;
+  }
+  @media screen and (max-width: 767px) {
+    bottom: 20px;
+  }
+  @media screen and (max-width: 1079px) {
+    right: 20px;
+  }
+}
