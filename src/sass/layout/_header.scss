@@ -128,8 +128,10 @@
 fill: $digits-text-color;
 position: absolute;
 left: 130px;
-}
-  
+@media screen and (min-width: 768px) {
+  left: 115px;
+  }
+} 
 
 .button__icon {
     fill: $digits-text-color;
