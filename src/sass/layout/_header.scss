@@ -109,7 +109,7 @@
     padding-left: 44px;
     height: 44px;
     width: 186px;
-    background:  $primary-button-text-color;
+    background:  $products-header-accent-color;
     border-radius: 22px;
     font-family: DM Sans;
     border: none;
@@ -117,7 +117,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: calc(21 / 16);
-    color: $secondary-button-text-color;
+    color: $primary-button-text-color;
   }
   
   .menu-container .button-buy {
@@ -304,7 +304,7 @@ left: 130px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 22px;
     outline: none;
     transition-property: border-color;
     transition-duration: 250ms;
