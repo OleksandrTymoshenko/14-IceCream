@@ -1,9 +1,140 @@
-<header class="header">
-    <h1 class="banner__title">HEADER</h1>
-<div class="container">
-    <ul>
-        <li>TEST</li>
-        <li>test2</li>
-        <li>t  e  s  t  3</li>
-    </ul>
-</div>
+<header>
+    <div class="container container-header">
+      <div class="box-header">
+        <a href="" class="logo">
+          <picture>
+            <source media="(min-width:1200px)" srcset="./images/logo-x1.png"
+              width="199" height="50"/>                 
+            <img src="./images/logo-x1.png" alt="Логотип"/>
+          </picture> 
+        </a>
+        <nav>
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="">Home</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="#about">About us</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="#made">How it's made</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="#products">Our products</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="#contact">Contact</a>
+            </li>
+          </ul>            
+        </nav>
+        <div class="button-container">
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__icon" width="20" height="12">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <button type="button" data-modalbuy-open class="button-buy">
+          Buy now
+          <svg class="mob-menu__icon" width="5" height="8">
+            <use href="./images/sprite.svg#icon-btn"></use>
+          </svg>
+        </button>
+        </div>
+      </div>      
+      
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-toggle__icon" width="14" height="14">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+          <button type="button" data-modalbuy-open-2 class="button-buy">
+            Buy now
+            <svg class="mob-menu__icon" width="5" height="8">
+              <use href="./images/sprite.svg#icon-btn"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">Home</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="#about">About us</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="#made">How it's made</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="#products">Our products</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="#contact">Contact</a>
+            </li>
+          </ul>            
+        </div>
+    </div>
+  </header>
+  <div class="backdrop visually-hidden" data-modalbuy>
+    <div class="modal">
+      <div class="modal__box">
+        <button class="modal__button" data-modalbuy-close>
+          <svg class="modal__icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form action="#" class="form">
+          <div class="form__box">
+            <h2 class="form__title">Buying form</h2>
+            <div class="form__container">
+              <label>
+                <p class="form__name">Name</p>
+                <input type="text" class="form__input" name="Username" />
+                <svg class="form__icon" width="18" height="18">
+                  <use href=""></use>
+                </svg>
+              </label>
+            </div>
+            <div class="form__container">
+              <label>
+                <p class="form__name">Phone</p>
+                <input type="tel" class="form__input" name="phone-number" />
+                <svg class="form__icon" width="18" height="18">
+                  <use href=""></use>
+                </svg>
+              </label>
+            </div>
+            <div class="form__container">
+              <label>
+                <p class="form__name">E-mail</p>
+                <input type="email" class="form__input" name="Email" />
+                <svg class="form__icon" width="18" height="18">
+                  <use href=""></use>
+                </svg>
+              </label>
+            </div>
+            <div class="form__container">
+              <label for="fav">
+                <p class="form__name">Choose product</p>
+              </label>
+                  <input list="product" name="fav" class="form__input"/>
+                  <datalist id="product">
+                    <option>Ice Cream</option>
+                    <option>Ice Coffe</option>
+                    <option>Milkshakes</option> 
+                  </datalist>
+            </div>
+                        <div class="button__box">
+                    <button type="submit" class="button-buy">
+                Buy now
+              </button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
