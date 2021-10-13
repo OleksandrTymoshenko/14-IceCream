@@ -9,8 +9,6 @@
 }
 
 .advantages__description {
-  padding-top: 66px;
-
   font-family: DM Sans;
   font-weight: 700;
   font-size: 12px;
@@ -18,7 +16,6 @@
   color: $black-text-color;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 86px;
     font-size: 14px;
     line-height: 1.74;
   }
@@ -55,6 +52,7 @@
 
 .advantages__item {
   position: relative;
+  padding-top: 66px;
 
   &::before {
     position: absolute;
@@ -100,6 +98,7 @@
 
   @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 3 - 80px);
+    padding-top: 86px;
     margin-top: 80px;
     margin-left: 80px;
   }
