@@ -16,6 +16,81 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 99;
+  @media screen and (min-width: 768px) {
+    padding-top: 38px;
+    padding-right: 5px;
+    padding-left: 5px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1080px) {
+    max-width: 1080px;
+  }
+}
+.button-container {
+  &.is-open {
+    opacity: 0;
+  }
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $mobile-menu-background;
+  padding-top: 60px;
+  text-align: center;
+  width: 250px;
+  height: 100vh;
+  z-index: 15;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  @media screen and (min-width: 768px) {
+    width: 254px;
+    transform: translateX(1300px);
+  }
+  @media screen and (min-width: 1080px) {
+    display: none;
+  }
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 0;
+  top: 10px;
+  right: 15px;
+}
+
+.container-header .menu-toggle {
+  background-color: transparent;
+  border: none;
+  }
+}
+
+.box-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   z-index: 10;
   @media screen and (min-width: 768px) {
     padding-top: 38px;
@@ -124,6 +199,40 @@
   margin-left: 0;
 }
 
+.mob-menu__icon {
+  fill: $digits-text-color;
+  position: absolute;
+  left: 130px;
+  @media screen and (min-width: 768px) {
+    left: 115px;
+  }
+
+.menu-container .button-buy {
+  display: inline-block;
+}
+
+.button-buy {
+  display: inline-block;
+  position: relative;
+  padding-right: 62px;
+  padding-left: 44px;
+  height: 44px;
+  width: 186px;
+  background: $primary-button-text-color;
+  border-radius: 22px;
+  font-family: DM Sans;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  color: $secondary-button-text-color;
+}
+
+.menu-container .button-buy {
+  margin-left: 0;
+}
+
 .button__icon {
   fill: $digits-text-color;
   position: absolute;
@@ -131,6 +240,33 @@
 }
 
 .mob-menu__list {
+  padding-top: 19px;
+  text-align: left;
+}
+
+.mob-menu__item {
+  height: 42px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-top: 1px solid $border-color;
+  &:last-child {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.mob-menu__link {
+  padding-left: 21px;
+  text-decoration: none;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  color: $primary-button-text-color;
+  &:hover,
+  &:focus {
+    color: $digits-text-color;
   margin-top: 19px;
   text-align: left;
   display: flex;
@@ -205,6 +341,10 @@
 
 .modal {
   position: absolute;
+  width: 95%;
+  height: 609px;
+  justify-content: center;
+  top: 400px;
   z-index: 999;
   width: 95%;
   height: 609px;
@@ -218,6 +358,113 @@
   background-color: $mobile-menu-background;
   @media screen and (min-width: 480px) {
     width: 450px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1080px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.modal__box {
+  position: relative;
+  @media screen and (min-width: 1080px) {
+    width: 528px;
+  }
+}
+
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: initial;
+  transition-property: cursor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .modal__icon,
+  &:focus .modal__icon {
+    cursor: pointer;
+    fill: $digits-text-color;
+  }
+}
+
+.modal__icon {
+  fill: $white-text-color;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__box {
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  width: 100%;
+}
+
+.form__title {
+  margin-bottom: 35px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: calc(55 / 48);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $digits-text-color;
+}
+
+.form__container {
+  position: relative;
+  height: 58px;
+  margin-bottom: 25px;
+}
+
+.form__name {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: $white-text-color;
+}
+
+.form__input {
+  padding-left: 20px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 22px;
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover,
+  &:focus.inform:focus::placeholder {
+    cursor: pointer;
+    border-color: $digits-text-color;
+  }
+}
+
+.button__box {
+  text-align: center;
+  margin-top: 50px;
+  justify-content: center;
+}
   }
   @media screen and (min-width: 480px) {
     width: 450px;
