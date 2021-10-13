@@ -1,79 +1,5 @@
 .container-header {
-    position: relative;
-    @media screen and (min-width: 1080px) {
-     width: 1080px;
-    }  
-  }
-  
-  .box-header { 
-    position:absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding-top: 6px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 99;
-    @media screen and (min-width: 768px) {
-      padding-top: 38px;
-      padding-right: 5px;
-      padding-left: 5px;
-      max-width: 768px;
-    }  
-    @media screen and (min-width: 1080px) {
-        max-width: 1080px;        
-    }  
-  }
-    
-  .menu-container { 
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color:  $mobile-menu-background;
-    padding-top: 60px; 
-    text-align: center;
-    width: 250px;
-    height: 100vh;
-    z-index: 100;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-    @media screen and (min-width: 768px) {
-      width: 254px;
-      transform: translateX(1300px);
-    }  
-    @media screen and (min-width: 1080px) {
-      display: none;
-    }
-  }
-  
-  .menu-container.is-open {
-    transform: translateX(0);
-  }
-  
-  .is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    height: 0;
-    width: 0;
-  }
-  
-  .menu-container .menu-toggle {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color:transparent;
-    border: 0;
-    top: 10px;
-    right: 15px;
-  }
-  
-  .container-header .menu-toggle {
-    background-color: transparent;
-    border: none;
+  position: relative;
   @media screen and (min-width: 1080px) {
    width: 1080px;
   }  
@@ -198,6 +124,7 @@
     margin-left: 0;
 }
 
+
 .button__icon {
   fill: $digits-text-color;
   position: absolute;
@@ -205,62 +132,22 @@
 }
 
 .mob-menu__list {
-    margin-top: 19px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
+  margin-top: 19px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .mob-menu__item {
-    display:inline-flex;
-    height: 42px;
-    text-align: start;
-    align-items: center;
-     border-top: 1px solid  $border-color;
-    &:last-child {
-      border-bottom: 1px solid  $border-color;
-    }
+  display:inline-flex;
+  height: 42px;
+  text-align: start;
+  align-items: center;
+   border-top: 1px solid  $border-color;
+  &:last-child {
+    border-bottom: 1px solid  $border-color;
   }
-  
-  .mob-menu__link {
-    margin-left: 21px;
-    padding-top: 11px;
-    padding-bottom: 11px;   
-    text-decoration: none;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    align-items: center;
-    color:  $primary-button-text-color;
-    &:hover,
-    &:focus {
-      color: $digits-text-color;
-    }
-  }
-  
-  .mob-menu__icon {
-    fill: $digits-text-color;
-    position: absolute;
-    left: 130px;
-    @media screen and (min-width: 768px) {
-      left: 115px;
-      }
-    } 
-
-  .nav-menu__list {
-    display: none;
-    @media screen and (min-width: 1080px) {
-      display: flex;   
-    }
-  }
-  
-  .nav-menu__item {
-    margin-right: 35px;
-    &:last-child {
-      margin-right: 0;
-    }
 }
 
 .mob-menu__link {
@@ -294,38 +181,6 @@
   display: none;
   @media screen and (min-width: 1080px) {
     display: flex;   
-  }
-  
-  .modal {   
-    position: absolute;
-    z-index: 999;
-    width: 95%;
-    height: 609px;
-    justify-content: center;
-    top: 400px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    background-color:  $mobile-menu-background;
-    @media screen and (min-width: 480px) {
-      width: 450px;
-    }
-    @media screen and (min-width: 480px) {
-      width: 450px;
-    }
-    @media screen and (min-width: 1080px) {
-      width: 528px;
-      height: 581px;    
-      } 
-  }
-
-  .modal__box {
-    position: relative;
-    z-index: 999;
-    @media screen and (min-width: 1080px) {
-      width: 528px;
   }
 }
 
@@ -380,7 +235,8 @@ color:  $white-text-color;
   position: relative;
   z-index: 999;
   @media screen and (min-width: 1080px) {
-    width: 528px;  
+    width: 528px;
+  
     } 
 }
 
@@ -480,5 +336,4 @@ color:  $white-text-color;
     color: #FFFFFF;
     }
 }
-
 
