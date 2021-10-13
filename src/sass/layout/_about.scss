@@ -7,7 +7,7 @@
   }
   @media screen and (min-width: 1080px) {
     padding-top: 125px;
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: 1080px) and (max-width: 2050px) {
       background-image: url(../images/about-des-milk-1x-min.png);
       background-size: contain;
       background-repeat: no-repeat;
@@ -173,6 +173,7 @@
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+    margin-top: 46px;
   }
   @media screen and (min-width: 1080px) {
     margin-left: 74px;
@@ -186,9 +187,6 @@
   line-height: calc(19 / 12);
   color: #000000;
   margin-bottom: 47px;
-  margin-top: 46px;
-  margin-right: auto;
-  margin-left: auto;
   @media screen and (min-width: 768px) {
     width: 340px;
     font-size: 14px;
@@ -212,7 +210,6 @@
   font-size: 12px;
   line-height: calc(19 / 12);
   color: #907e82;
-  margin: 0 auto;
   @media screen and (min-width: 768px) {
     width: 340px;
     font-size: 14px;
@@ -220,7 +217,6 @@
     letter-spacing: 0.04em;
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 62px;
   }
   @media screen and (min-width: 1080px) {
     width: 463px;
@@ -228,17 +224,10 @@
     font-size: 14px;
     line-height: calc(27 / 14);
     letter-spacing: 0.04em;
-    margin-bottom: 45px;
   }
 }
 
 .about-button {
-  // font-family: DM Sans;
-  // font-style: normal;
-  // font-weight: bold;
-  // font-size: 14px;
-  // line-height: calc(18 / 14);
-  // color: #d41443;
   width: 176px;
   height: 44px;
   margin-top: 47px;
