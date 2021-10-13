@@ -37,7 +37,7 @@
     text-align: center;
     width: 250px;
     height: 100vh;
-    z-index: 999;
+    z-index: 100;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
     @media screen and (min-width: 768px) {
@@ -124,14 +124,7 @@
       margin-left: 0;
   }
 
-.mob-menu__icon {
-fill: $digits-text-color;
-position: absolute;
-left: 130px;
-@media screen and (min-width: 768px) {
-  left: 115px;
-  }
-} 
+
 
 .button__icon {
     fill: $digits-text-color;
@@ -140,14 +133,18 @@ left: 130px;
 }
 
 .mob-menu__list {
-    padding-top: 19px;
+    margin-top: 19px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .mob-menu__item {
+    display:inline-flex;
     height: 42px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    text-align: start;
+    align-items: center;
      border-top: 1px solid  $border-color;
     &:last-child {
       border-bottom: 1px solid  $border-color;
@@ -155,7 +152,9 @@ left: 130px;
   }
   
   .mob-menu__link {
-    padding-left: 21px;
+    margin-left: 21px;
+    padding-top: 11px;
+    padding-bottom: 11px;   
     text-decoration: none;
     font-family: DM Sans;
     font-style: normal;
@@ -170,6 +169,15 @@ left: 130px;
     }
   }
   
+  .mob-menu__icon {
+    fill: $digits-text-color;
+    position: absolute;
+    left: 130px;
+    @media screen and (min-width: 768px) {
+      left: 115px;
+      }
+    } 
+
   .nav-menu__list {
     display: none;
     @media screen and (min-width: 1080px) {
@@ -198,9 +206,10 @@ left: 130px;
     }
   }
   
-  
-  .modal {
+ 
+  .modal {   
     position: absolute;
+    z-index: 999;
     width: 95%;
     height: 609px;
     justify-content: center;
@@ -222,9 +231,10 @@ left: 130px;
       height: 581px;    
       } 
   }
-  
+
   .modal__box {
     position: relative;
+    z-index: 999;
     @media screen and (min-width: 1080px) {
       width: 528px;
     
@@ -321,4 +331,9 @@ left: 130px;
     text-align: center;
     margin-top: 50px;
      justify-content: center;
+     & .button-buy {
+      background-color: #D41342;
+      color: #FFFFFF;;
+    }
+
   }
