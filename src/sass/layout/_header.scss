@@ -1,12 +1,12 @@
 .container-header {
   position: relative;
   @media screen and (min-width: 1080px) {
-   width: 1080px;
-  }  
+    width: 1080px;
+  }
 }
 
-.box-header { 
-  position:absolute;
+.box-header {
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -16,24 +16,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 99;
+  z-index: 10;
   @media screen and (min-width: 768px) {
     padding-top: 38px;
     padding-right: 5px;
     padding-left: 5px;
     max-width: 768px;
-  }  
+  }
   @media screen and (min-width: 1080px) {
-      max-width: 1080px;        
-  }  
+    max-width: 1080px;
+  }
 }
-  
-.menu-container { 
+
+.menu-container {
   position: fixed;
   top: 0;
   right: 0;
-  background-color:  $mobile-menu-background;
-  padding-top: 60px; 
+  background-color: $mobile-menu-background;
+  padding-top: 60px;
   text-align: center;
   width: 250px;
   height: 100vh;
@@ -43,7 +43,7 @@
   @media screen and (min-width: 768px) {
     width: 254px;
     transform: translateX(1300px);
-  }  
+  }
   @media screen and (min-width: 1080px) {
     display: none;
   }
@@ -65,7 +65,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background-color:transparent;
+  background-color: transparent;
   border: 0;
   top: 10px;
   right: 15px;
@@ -74,7 +74,7 @@
 .container-header .menu-toggle {
   background-color: transparent;
   border: none;
-@media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1080px) {
     display: none;
   }
 }
@@ -109,7 +109,7 @@
   padding-left: 44px;
   height: 44px;
   width: 186px;
-  background:  $primary-button-text-color;
+  background: $primary-button-text-color;
   border-radius: 22px;
   font-family: DM Sans;
   border: none;
@@ -121,9 +121,8 @@
 }
 
 .menu-container .button-buy {
-    margin-left: 0;
+  margin-left: 0;
 }
-
 
 .button__icon {
   fill: $digits-text-color;
@@ -136,24 +135,23 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  
 }
 
 .mob-menu__item {
-  display:inline-flex;
+  display: inline-flex;
   height: 42px;
   text-align: start;
   align-items: center;
-   border-top: 1px solid  $border-color;
+  border-top: 1px solid $border-color;
   &:last-child {
-    border-bottom: 1px solid  $border-color;
+    border-bottom: 1px solid $border-color;
   }
 }
 
 .mob-menu__link {
   margin-left: 21px;
   padding-top: 11px;
-  padding-bottom: 11px;   
+  padding-bottom: 11px;
   text-decoration: none;
   font-family: DM Sans;
   font-style: normal;
@@ -161,7 +159,7 @@
   font-size: 14px;
   line-height: 18px;
   align-items: center;
-  color:  $primary-button-text-color;
+  color: $primary-button-text-color;
   &:hover,
   &:focus {
     color: $digits-text-color;
@@ -174,13 +172,13 @@
   left: 130px;
   @media screen and (min-width: 768px) {
     left: 115px;
-    }
-  } 
+  }
+}
 
 .nav-menu__list {
   display: none;
   @media screen and (min-width: 1080px) {
-    display: flex;   
+    display: flex;
   }
 }
 
@@ -192,33 +190,32 @@
 }
 
 .nav-menu__link {
-text-decoration: none;
-font-family: DM Sans;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: calc(21 / 16);
-color:  $white-text-color;
+  text-decoration: none;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  color: $white-text-color;
   &:hover,
   &:focus {
     color: $title-text-color;
   }
 }
 
-
-.modal {   
+.modal {
   position: absolute;
   z-index: 999;
   width: 95%;
   height: 609px;
   justify-content: center;
-  top: 400px;
+  top: 300px;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background-color:  $mobile-menu-background;
+  background-color: $mobile-menu-background;
   @media screen and (min-width: 480px) {
     width: 450px;
   }
@@ -227,8 +224,8 @@ color:  $white-text-color;
   }
   @media screen and (min-width: 1080px) {
     width: 528px;
-    height: 581px;    
-    } 
+    height: 581px;
+  }
 }
 
 .modal__box {
@@ -236,8 +233,7 @@ color:  $white-text-color;
   z-index: 999;
   @media screen and (min-width: 1080px) {
     width: 528px;
-  
-    } 
+  }
 }
 
 .modal__button {
@@ -261,7 +257,7 @@ color:  $white-text-color;
 }
 
 .modal__icon {
-  fill:$white-text-color;
+  fill: $white-text-color;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -296,7 +292,7 @@ color:  $white-text-color;
   height: 58px;
   margin-bottom: 25px;
 }
-  
+
 .form__name {
   font-family: DM Sans;
   font-style: normal;
@@ -324,16 +320,15 @@ color:  $white-text-color;
     border-color: $digits-text-color;
   }
 }
- 
+
 .button__box {
   text-align: center;
   margin-top: 50px;
-   justify-content: center;
-   & .button-buy {
+  justify-content: center;
+  & .button-buy {
     padding-left: 0;
     padding-right: 0;
-    background-color: #D41342;
-    color: #FFFFFF;
-    }
+    background-color: #d41342;
+    color: #ffffff;
+  }
 }
-
