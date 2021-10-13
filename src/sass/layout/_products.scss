@@ -1,5 +1,5 @@
 .products {
-  // background-color: #342523;
+  padding-bottom: 130px;
 }
 // .container {
 //   width: 100%;
@@ -68,6 +68,11 @@
   justify-content: space-between;
 }
 .products__list-item {
+  @media (min-width: 240px) and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
   @media (min-width: 768px) and (max-width: 1079px) {
     width: 220px;
   }
@@ -84,10 +89,10 @@
   background-color: #ffb8ca;
   border-radius: 24px;
   height: 485px;
-  margin-bottom: 17px;
+  // margin-bottom: 17px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 130px;
+
   position: relative;
   display: flex;
   justify-content: center;
